@@ -252,8 +252,9 @@
                                             <rect key="frame" x="1" y="47" width="391" height="19"/>
                                         </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l5-sf-UQ3">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4l5-sf-UQ3" userLabel="UILabel1">
                                         <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <accessibility key="accessibilityConfiguration" label="Quantity1"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -351,17 +352,14 @@
                                             <rect key="frame" x="5" y="0.0" width="391" height="21"/>
                                         </variation>
                                     </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8sM-qL-NNf">
-                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="230" y="26" width="94" height="29"/>
-                                        </variation>
-                                    </stepper>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="g4R-xZ-L48">
                                         <rect key="frame" x="-47" y="-14" width="94" height="29"/>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="230" y="68" width="94" height="29"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="Stepper2ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="HVU-44-omq"/>
+                                        </connections>
                                     </stepper>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="pew-Zr-lmq">
                                         <rect key="frame" x="-47" y="-14" width="94" height="29"/>
@@ -374,6 +372,9 @@
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="230" y="147" width="94" height="29"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="Stepper3ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="AxK-y7-VOn"/>
+                                        </connections>
                                     </stepper>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DYy-dD-90s">
                                         <rect key="frame" x="-47" y="-14" width="94" height="29"/>
@@ -392,6 +393,15 @@
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="230" y="389" width="94" height="29"/>
                                         </variation>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8sM-qL-NNf">
+                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="230" y="26" width="94" height="29"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="U45-8X-se2"/>
+                                        </connections>
                                     </stepper>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -433,13 +443,13 @@
                                         <exclude reference="1KO-4a-S6o"/>
                                         <exclude reference="vo4-vI-Aea"/>
                                         <exclude reference="3zR-2m-zZK"/>
-                                        <exclude reference="8sM-qL-NNf"/>
                                         <exclude reference="g4R-xZ-L48"/>
                                         <exclude reference="pew-Zr-lmq"/>
                                         <exclude reference="cIM-5p-Lzn"/>
                                         <exclude reference="DYy-dD-90s"/>
                                         <exclude reference="cvn-0v-2UO"/>
                                         <exclude reference="dox-A6-AQ6"/>
+                                        <exclude reference="8sM-qL-NNf"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -481,13 +491,13 @@
                                         <include reference="1KO-4a-S6o"/>
                                         <include reference="vo4-vI-Aea"/>
                                         <include reference="3zR-2m-zZK"/>
-                                        <include reference="8sM-qL-NNf"/>
                                         <include reference="g4R-xZ-L48"/>
                                         <include reference="pew-Zr-lmq"/>
                                         <include reference="cIM-5p-Lzn"/>
                                         <include reference="DYy-dD-90s"/>
                                         <include reference="cvn-0v-2UO"/>
                                         <include reference="dox-A6-AQ6"/>
+                                        <include reference="8sM-qL-NNf"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -577,6 +587,19 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="Stepper" destination="8sM-qL-NNf" id="MiW-oV-Z1B"/>
+                        <outlet property="UILabel1" destination="4l5-sf-UQ3" id="l1d-IK-Ufl"/>
+                        <outlet property="UILabel10" destination="vo4-vI-Aea" id="q8f-cP-gT1"/>
+                        <outlet property="UILabel2" destination="jVI-e2-NVZ" id="QOg-5H-cmJ"/>
+                        <outlet property="UILabel3" destination="VeK-Lk-Krc" id="sBG-zT-BL4"/>
+                        <outlet property="UILabel4" destination="xcx-Xg-dgI" id="3bu-ue-jWN"/>
+                        <outlet property="UILabel5" destination="QpY-j1-SXc" id="VRG-aS-eTD"/>
+                        <outlet property="UILabel6" destination="EyD-i4-kPe" id="u4s-SS-LW4"/>
+                        <outlet property="UILabel7" destination="wwt-3G-gGE" id="OtC-YC-gek"/>
+                        <outlet property="UILabel8" destination="vO9-eq-9fV" id="Kg3-vf-dFa"/>
+                        <outlet property="UILabel9" destination="1KO-4a-S6o" id="gFz-0T-cme"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
