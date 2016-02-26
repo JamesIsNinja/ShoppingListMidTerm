@@ -154,18 +154,27 @@
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="230" y="272" width="94" height="29"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="u0q-Yw-Asl"/>
+                                        </connections>
                                     </stepper>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Lsb-Iy-lUn">
                                         <rect key="frame" x="-47" y="-14" width="94" height="29"/>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="230" y="310" width="94" height="29"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="X2x-z8-CFW"/>
+                                        </connections>
                                     </stepper>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="jaS-DO-lrl">
                                         <rect key="frame" x="-47" y="-14" width="94" height="29"/>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="230" y="350" width="94" height="29"/>
                                         </variation>
+                                        <connections>
+                                            <action selector="StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="omT-Zf-paj"/>
+                                        </connections>
                                     </stepper>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Enter Shopping Item" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOV-Wd-D3V">
                                         <rect key="frame" x="-25" y="-30" width="97" height="30"/>
@@ -232,15 +241,6 @@
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                             <rect key="frame" x="1" y="126" width="391" height="21"/>
-                                        </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_____________________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHZ-DG-QyA">
-                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.49419175389999997" green="0.49419175389999997" blue="0.49419175389999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="1" y="83" width="391" height="21"/>
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_____________________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDM-Eu-Ik5">
@@ -352,48 +352,6 @@
                                             <rect key="frame" x="5" y="0.0" width="391" height="21"/>
                                         </variation>
                                     </label>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="g4R-xZ-L48">
-                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="230" y="68" width="94" height="29"/>
-                                        </variation>
-                                        <connections>
-                                            <action selector="Stepper2ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="HVU-44-omq"/>
-                                        </connections>
-                                    </stepper>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="pew-Zr-lmq">
-                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="230" y="109" width="94" height="29"/>
-                                        </variation>
-                                    </stepper>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="cIM-5p-Lzn">
-                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="230" y="147" width="94" height="29"/>
-                                        </variation>
-                                        <connections>
-                                            <action selector="Stepper3ValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="AxK-y7-VOn"/>
-                                        </connections>
-                                    </stepper>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DYy-dD-90s">
-                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="230" y="186" width="94" height="29"/>
-                                        </variation>
-                                    </stepper>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="cvn-0v-2UO">
-                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="230" y="227" width="94" height="29"/>
-                                        </variation>
-                                    </stepper>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="dox-A6-AQ6">
-                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
-                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="230" y="389" width="94" height="29"/>
-                                        </variation>
-                                    </stepper>
                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="8sM-qL-NNf">
                                         <rect key="frame" x="-47" y="-14" width="94" height="29"/>
                                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -403,6 +361,69 @@
                                             <action selector="StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="U45-8X-se2"/>
                                         </connections>
                                     </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="g4R-xZ-L48">
+                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="230" y="68" width="94" height="29"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="6zM-3y-OB7"/>
+                                        </connections>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="pew-Zr-lmq">
+                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="230" y="109" width="94" height="29"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="asn-4f-xWY"/>
+                                        </connections>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="cIM-5p-Lzn">
+                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="230" y="147" width="94" height="29"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="wsa-O6-j7L"/>
+                                        </connections>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DYy-dD-90s">
+                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="230" y="186" width="94" height="29"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="CCD-oq-dMF"/>
+                                        </connections>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="cvn-0v-2UO">
+                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="230" y="227" width="94" height="29"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="zRU-PM-glz"/>
+                                        </connections>
+                                    </stepper>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="dox-A6-AQ6">
+                                        <rect key="frame" x="-47" y="-14" width="94" height="29"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="230" y="389" width="94" height="29"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="StepperValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="bSB-Oc-HDU"/>
+                                        </connections>
+                                    </stepper>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_____________________________________________________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AHZ-DG-QyA">
+                                        <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.49419175389999997" green="0.49419175389999997" blue="0.49419175389999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                            <rect key="frame" x="1" y="84" width="391" height="21"/>
+                                        </variation>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <variation key="default">
@@ -430,7 +451,6 @@
                                         <exclude reference="KEY-Ub-SM7"/>
                                         <exclude reference="f5w-Xz-bva"/>
                                         <exclude reference="fbU-ZP-890"/>
-                                        <exclude reference="AHZ-DG-QyA"/>
                                         <exclude reference="sDM-Eu-Ik5"/>
                                         <exclude reference="4l5-sf-UQ3"/>
                                         <exclude reference="jVI-e2-NVZ"/>
@@ -443,13 +463,14 @@
                                         <exclude reference="1KO-4a-S6o"/>
                                         <exclude reference="vo4-vI-Aea"/>
                                         <exclude reference="3zR-2m-zZK"/>
+                                        <exclude reference="8sM-qL-NNf"/>
                                         <exclude reference="g4R-xZ-L48"/>
                                         <exclude reference="pew-Zr-lmq"/>
                                         <exclude reference="cIM-5p-Lzn"/>
                                         <exclude reference="DYy-dD-90s"/>
                                         <exclude reference="cvn-0v-2UO"/>
                                         <exclude reference="dox-A6-AQ6"/>
-                                        <exclude reference="8sM-qL-NNf"/>
+                                        <exclude reference="AHZ-DG-QyA"/>
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
@@ -478,7 +499,6 @@
                                         <include reference="KEY-Ub-SM7"/>
                                         <include reference="f5w-Xz-bva"/>
                                         <include reference="fbU-ZP-890"/>
-                                        <include reference="AHZ-DG-QyA"/>
                                         <include reference="sDM-Eu-Ik5"/>
                                         <include reference="4l5-sf-UQ3"/>
                                         <include reference="jVI-e2-NVZ"/>
@@ -491,13 +511,14 @@
                                         <include reference="1KO-4a-S6o"/>
                                         <include reference="vo4-vI-Aea"/>
                                         <include reference="3zR-2m-zZK"/>
+                                        <include reference="8sM-qL-NNf"/>
                                         <include reference="g4R-xZ-L48"/>
                                         <include reference="pew-Zr-lmq"/>
                                         <include reference="cIM-5p-Lzn"/>
                                         <include reference="DYy-dD-90s"/>
                                         <include reference="cvn-0v-2UO"/>
                                         <include reference="dox-A6-AQ6"/>
-                                        <include reference="8sM-qL-NNf"/>
+                                        <include reference="AHZ-DG-QyA"/>
                                     </mask>
                                 </variation>
                             </view>
@@ -555,6 +576,9 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="271" y="591" width="109" height="37"/>
                                 </variation>
+                                <connections>
+                                    <action selector="Reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LJC-wf-XKb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KNW-Z7-acL">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -588,7 +612,27 @@
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="ShoppingItem1" destination="kpF-2q-hZb" id="hua-0l-q3q"/>
+                        <outlet property="ShoppingItem10" destination="abr-Tc-0Fy" id="Zui-42-JDB"/>
+                        <outlet property="ShoppingItem2" destination="M6x-ou-vbD" id="Ad7-mI-HUa"/>
+                        <outlet property="ShoppingItem3" destination="OAW-vS-MMu" id="aAa-hs-73S"/>
+                        <outlet property="ShoppingItem4" destination="pxn-2c-45x" id="wbR-7l-JN6"/>
+                        <outlet property="ShoppingItem5" destination="YOV-Wd-D3V" id="mo4-kV-X7H"/>
+                        <outlet property="ShoppingItem6" destination="EtA-Ol-V0i" id="uAj-Fb-DdV"/>
+                        <outlet property="ShoppingItem7" destination="BZs-s5-s6b" id="aRv-gd-0SC"/>
+                        <outlet property="ShoppingItem8" destination="66B-tY-TD8" id="7md-BM-7RM"/>
+                        <outlet property="ShoppingItem9" destination="MIj-Oa-oDV" id="rZd-lY-xtt"/>
+                        <outlet property="ShoppingListName" destination="Rbo-7X-Y2g" id="XJw-cq-rKZ"/>
                         <outlet property="Stepper" destination="8sM-qL-NNf" id="MiW-oV-Z1B"/>
+                        <outlet property="Stepper10" destination="dox-A6-AQ6" id="Osa-8T-9RF"/>
+                        <outlet property="Stepper2" destination="g4R-xZ-L48" id="SpN-km-tbq"/>
+                        <outlet property="Stepper3" destination="pew-Zr-lmq" id="zfc-IV-wnj"/>
+                        <outlet property="Stepper4" destination="cIM-5p-Lzn" id="qaM-nf-KJl"/>
+                        <outlet property="Stepper5" destination="DYy-dD-90s" id="Odj-Y5-97R"/>
+                        <outlet property="Stepper6" destination="cvn-0v-2UO" id="Lnt-Fz-OGM"/>
+                        <outlet property="Stepper7" destination="erR-hU-qjv" id="eh1-RB-Afl"/>
+                        <outlet property="Stepper8" destination="Lsb-Iy-lUn" id="qgl-NC-p0H"/>
+                        <outlet property="Stepper9" destination="jaS-DO-lrl" id="eS1-nY-0ex"/>
                         <outlet property="UILabel1" destination="4l5-sf-UQ3" id="l1d-IK-Ufl"/>
                         <outlet property="UILabel10" destination="vo4-vI-Aea" id="q8f-cP-gT1"/>
                         <outlet property="UILabel2" destination="jVI-e2-NVZ" id="QOg-5H-cmJ"/>
