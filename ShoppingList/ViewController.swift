@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          // Do any additional setup after loading the view, typically from a nib.
+        
+        //Make all steppers min/max vales, and make them wrap, and auto repeat if the user holds the button
        Stepper.minimumValue = 0;
         Stepper.maximumValue = 999;
         Stepper.wraps = true
@@ -46,6 +48,7 @@ class ViewController: UIViewController {
         Stepper8.wraps = true
 
     }
+    //IB Outlets for all the steppers, UILabels, and UIText Fields
     @IBOutlet weak var Stepper: UIStepper!
     @IBOutlet weak var Stepper2: UIStepper!
     @IBOutlet weak var Stepper3: UIStepper!
@@ -72,7 +75,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var ShoppingItem3: UITextField!
     @IBOutlet weak var ShoppingItem2: UITextField!
     @IBOutlet weak var ShoppingItemMessed: UITextField!
+    
+    //Function to update quantity whenever the user clicks on stepper to update the UILabel
     @IBAction func StepperValueChanged(sender: UIStepper) {
+        //Find which stepper was clicked, and incriment the correct text field.
         if sender == Stepper
         {
             UILabel1.text = Int(sender.value).description
@@ -106,8 +112,9 @@ class ViewController: UIViewController {
             UILabel8.text = Int(sender.value).description
         }
     }
-
+    //Reset function for all the fields except shopping list name
     @IBAction func Reset(sender: AnyObject) {
+        //reset all fields.
         UILabel1.text = "0";
         UILabel2.text = "0";
         UILabel3.text = "0";
