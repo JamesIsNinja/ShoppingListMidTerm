@@ -44,15 +44,7 @@ class ViewController: UIViewController {
         Stepper8.minimumValue = 0;
         Stepper8.maximumValue = 999;
         Stepper8.wraps = true
-        Stepper8.autorepeat = true
-        Stepper9.minimumValue = 0;
-        Stepper9.maximumValue = 999;
-        Stepper9.wraps = true
-        Stepper9.autorepeat = true
-        Stepper10.minimumValue = 0;
-        Stepper10.maximumValue = 999;
-        Stepper10.wraps = true
-        Stepper10.autorepeat = true
+
     }
     @IBOutlet weak var Stepper: UIStepper!
     @IBOutlet weak var Stepper2: UIStepper!
@@ -61,9 +53,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var Stepper5: UIStepper!
     @IBOutlet weak var Stepper6: UIStepper!
     @IBOutlet weak var Stepper8: UIStepper!
-    @IBOutlet weak var Stepper9: UIStepper!
     @IBOutlet weak var Stepper7: UIStepper!
-    @IBOutlet weak var Stepper10: UIStepper!
     @IBOutlet weak var UILabel1: UILabel!
     @IBOutlet weak var UILabel2: UILabel!
     @IBOutlet weak var UILabel3: UILabel!
@@ -72,13 +62,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var UILabel6: UILabel!
     @IBOutlet weak var UILabel7: UILabel!
     @IBOutlet weak var UILabel8: UILabel!
-    @IBOutlet weak var UILabel9: UILabel!
-    @IBOutlet weak var UILabel10: UILabel!
     @IBOutlet weak var ShoppingListName: UITextField!
     @IBOutlet weak var ShoppingItem1: UITextField!
-    
-    @IBOutlet weak var ShoppingItem10: UITextField!
-    @IBOutlet weak var ShoppingItem9: UITextField!
     @IBOutlet weak var ShoppingItem8: UITextField!
     @IBOutlet weak var ShoppingItem7: UITextField!
     @IBOutlet weak var ShoppingItem6: UITextField!
@@ -86,6 +71,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var ShoppingItem4: UITextField!
     @IBOutlet weak var ShoppingItem3: UITextField!
     @IBOutlet weak var ShoppingItem2: UITextField!
+    @IBOutlet weak var ShoppingItemMessed: UITextField!
     @IBAction func StepperValueChanged(sender: UIStepper) {
         if sender == Stepper
         {
@@ -119,14 +105,6 @@ class ViewController: UIViewController {
         {
             UILabel8.text = Int(sender.value).description
         }
-        else if sender == Stepper9
-        {
-            UILabel9.text = Int(sender.value).description
-        }
-        else if sender == Stepper10
-        {
-            UILabel10.text = Int(sender.value).description
-        }
     }
 
     @IBAction func Reset(sender: AnyObject) {
@@ -138,8 +116,6 @@ class ViewController: UIViewController {
         UILabel6.text = "0";
         UILabel7.text = "0";
         UILabel8.text = "0";
-        UILabel9.text = "0";
-        UILabel10.text = "0";
         Stepper.value = 0;
         Stepper2.value = 0;
         Stepper3.value = 0;
@@ -148,19 +124,15 @@ class ViewController: UIViewController {
         Stepper6.value = 0;
         Stepper7.value = 0;
         Stepper8.value = 0;
-        Stepper9.value = 0;
-        Stepper10.value = 0;
         ShoppingListName.text = "My Shopping List"
         ShoppingItem1.text = "Enter Shopping Item"
-        ShoppingItem10.text = "Enter Shopping Item"
         ShoppingItem2.text = "Enter Shopping Item"
         ShoppingItem3.text = "Enter Shopping Item"
         ShoppingItem4.text = "Enter Shopping Item"
         ShoppingItem5.text = "Enter Shopping Item"
         ShoppingItem6.text = "Enter Shopping Item"
         ShoppingItem7.text = "Enter Shopping Item"
-        ShoppingItem8.text = "Enter Shopping Item"
-        ShoppingItem9.text = "Enter Shopping Item"
+        ShoppingItemMessed.text = "Enter Shopping Item"
 
     }
 }
